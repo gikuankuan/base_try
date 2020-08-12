@@ -89,6 +89,5 @@ class DB
     public function q($sql)
     {
         return $this->pdo->query($sql)->fetchAll();
-        
     }
 }
