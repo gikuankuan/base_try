@@ -1,7 +1,5 @@
 <?php
-
 session_start();
-
 class DB
 {
     private $dsn = "mysql:host=localhost;chartset=utf8;dbname=db-10";
@@ -89,7 +87,5 @@ class DB
     public function q($sql)
     {
         return $this->pdo->query($sql)->fetchAll();
-        
     }
 }
-

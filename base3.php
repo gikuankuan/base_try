@@ -75,8 +75,8 @@ class DB{
             $sql="insert into $this->table (`".implode("`,`",array_keys($arg))."`) value ('".implode("','",$arg)."')"; 
         }
         return $this->pdo->exec($sql);
-        
     }
+    
 
     public function del(...$arg){
         $sql="delete * fron $this->table";
